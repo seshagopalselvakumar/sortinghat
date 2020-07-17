@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Shadows+Into+Light&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Nothing You Could Do',
+        cursive;
+}
+
+.container {
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+.top-half,
+.bottom-half {
+    height: 50%;
+}
+
+.top-half {
+    display: flex;
+    justify-content: center;
+}
+
+.top-half img {
+    width: 100%;
+    max-width: 60%;
+}
+
+.bottom-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-half h2,
+p {
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+}
+
+.bottom-half h2 {
+    font-size: 2.15em;
+}
+
+.bottom-half p {
+    font-family: 'Shadows Into Light',
+        cursive;
+    font-size: 1.25em;
+}
+
+.sort-button {
+    width: 10%;
+    background-color: #fff;
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    font-family: 'Shadows Into Light',
+        cursive;
+    transition: 0.3s;
+}
+
+.sort-button:hover {
+    transform: translateY(-2px);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px #fff;
+}
+
+@media only screen and (max-width:1024px) {
+    .sort-button {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .sort-button {
+        font-size: 0.9em;
+    }
+}
